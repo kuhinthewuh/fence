@@ -1,0 +1,9 @@
+version: 1.0.0
+name: Fence
+description: Statistical evidence-sufficiency MCP server with class-conditional split conformal prediction and conservative abstention.
+repository: https://github.com/fence-ai/fence
+license: MIT
+startCommand:
+  type: stdio
+  config:
+    command: fence-evidence-mcp

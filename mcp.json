@@ -1,0 +1,35 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schema/mcp-server.json",
+  "name": "Fence",
+  "version": "0.1.0",
+  "description": "Statistical evidence-sufficiency MCP server that helps AI agents determine whether retrieved evidence genuinely supports an answer using probability calibration, class-conditional split conformal prediction, and conservative abstention.",
+  "author": {
+    "name": "Fence Contributors"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fence-ai/fence"
+  },
+  "homepage": "https://pypi.org/project/fence-evidence-mcp/",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "conformal-prediction",
+    "rag",
+    "evidence-sufficiency",
+    "calibration",
+    "abstention",
+    "safety",
+    "evaluation"
+  ],
+  "transport": {
+    "type": "stdio"
+  },
+  "command": "fence-evidence-mcp",
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": true
+  }
+}

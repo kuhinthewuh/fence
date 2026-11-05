@@ -1,0 +1,56 @@
+name: Release to PyPI
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      confirm_release:
+        description: 'Type "CONFIRM" to proceed with PyPI release'
+        required: true
+        default: ''
+
+jobs:
+  pypi-publish:
+    name: Build and Upload to PyPI
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/fence-evidence-mcp
+    permissions:
+      id-token: write  # Mandatory for PyPI Trusted Publishing (OIDC)
+      contents: read
+
+    steps:
+    - name: Safety Confirmation Check (Manual Dispatch)
+      if: github.event_name == 'workflow_dispatch'
+      run: |
+        if [ "${{ github.event.inputs.confirm_release }}" != "CONFIRM" ]; then
+          echo "Release aborted: Confirmation string did not match 'CONFIRM'."
+          exit 1
+        fi
+
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    - name: Install build and validation dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build twine
+
+    - name: Build distributions
+      run: |
+        python -m build
+
+    - name: Verify package integrity
+      run: |
+        python -m twine check --strict dist/*
+
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        verbose: true

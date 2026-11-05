@@ -1,0 +1,18 @@
+{
+  "snapshot_date": "2026-11-05",
+  "timestamp_utc": "2026-11-05 19:33:02 UTC",
+  "product_name": "Fence",
+  "pypi_package": "fence-evidence-mcp",
+  "pypi_published": true,
+  "pypi_latest_version": "0.1.0",
+  "pypi_total_releases": 1,
+  "pypi_download_events": "Initial release (aggregating)",
+  "pypi_downloads_note": "Download events from PyPI/mirrors; NOT unique users.",
+  "verified_active_users": 1,
+  "github_stars": "Pending repo connection",
+  "github_forks": "Pending repo connection",
+  "github_open_issues": "Pending repo connection",
+  "mcp_registry_status": "Prepared locally (pending submission)",
+  "campaign_goal": 5000,
+  "campaign_deadline": "2026-11-08"
+}
