@@ -25,3 +25,4 @@ Please provide:
 - We will acknowledge receipt of the report within 48 hours.
 - We will provide a timeline for triage and patch release.
 - A public security advisory will be issued alongside the release of a patch.
+

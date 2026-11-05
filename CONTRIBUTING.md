@@ -60,3 +60,4 @@ fence-evidence-mcp --demo
 4. Verify that all 43+ tests pass (`pytest -v`).
 5. Update `CHANGELOG.md` under `[Unreleased]`.
 6. Open a Pull Request following the PR template.
+

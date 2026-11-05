@@ -127,3 +127,4 @@ Unit tests pass across Python 3.11, 3.12, and 3.13 on Linux, Windows, and macOS.
 
 Feedback on the packaging, pure Python algorithmic implementation, or MCP integration is very welcome!
 ```
+

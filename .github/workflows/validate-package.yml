@@ -39,3 +39,4 @@ jobs:
         .clean_env/bin/python -m pip install dist/*.whl
         .clean_env/bin/fence-evidence-mcp --version
         .clean_env/bin/python -c "import fence_evidence; print('Verified import:', fence_evidence.__version__)"
+

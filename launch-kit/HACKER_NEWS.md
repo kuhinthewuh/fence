@@ -39,3 +39,4 @@ In our synthetic benchmark (2,000 queries with simulated lexical traps):
 
 We'd love HN's thoughts on the statistical formulation, failure modes of the exchangeability assumption in production RAG, and MCP server developer experience!
 ```
+

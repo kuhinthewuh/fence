@@ -85,3 +85,4 @@ Evaluating on the 1,000 holdout test observations ($n_0^{\text{test}} = 519, n_1
    - Quantile gate fitting: 0.41 ms
    - Full 1,000-sample holdout evaluation: 2.48 ms
    - Total runtime: 12.89 ms
+

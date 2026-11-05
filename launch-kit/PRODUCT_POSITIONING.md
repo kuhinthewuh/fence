@@ -36,3 +36,4 @@
 > Today's teams either trust raw cosine similarity—which suffers from severe miscalibration and lexical traps—or they call an LLM-as-a-judge, which adds seconds of latency and dollars of cost.
 > Fence provides a deterministic alternative. Built purely on Python's standard library and the official Model Context Protocol v2, Fence calibrates retrieval scores and computes finite-sample nonconformity quantiles separately for sufficient and insufficient evidence.
 > When a new document arrives, Fence constructs a conformal prediction set: if the set is strictly {1}, evidence is certified; if the set is {0}, it is rejected; if it's {0, 1}, Fence enforces conservative abstention. In our benchmarks, this cuts false-sufficiency errors from over 25% down to 9.9% while executing in sub-millisecond time."
+

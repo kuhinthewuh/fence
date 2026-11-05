@@ -7,3 +7,4 @@ startCommand:
   type: stdio
   config:
     command: fence-evidence-mcp
+

@@ -78,3 +78,4 @@ Yes! All functions and classes are directly importable from `fence_evidence`:
 ```python
 from fence_evidence import fit_conformal_gate, predict_one, audit_scores
 ```
+

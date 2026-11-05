@@ -63,3 +63,4 @@ startCommand:
 - **Title:** Fence – Evidence deserves a boundary
 - **Description:** Open-source statistical toolkit and MCP server for auditing evidence sufficiency in RAG pipelines. Prevents agents from acting on deceptive retrieval scores via finite-sample conformal prediction and conservative abstention.
 - **Tags:** `mcp`, `rag`, `conformal-prediction`, `safety`, `evaluation`
+
